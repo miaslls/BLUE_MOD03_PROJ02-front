@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./assets/CSS/style.css">
+    <link rel="stylesheet" href="./assets/CSS/style_moods.css">
+    <link rel="stylesheet" href="./assets/CSS/style_moodForm.css">
+    <link rel="icon" href="./assets/IMG/favicon.png">
+
+    <title>MiaMood | TODAY</title>
+
+</head>
+
+<body>
+
+    <div class="horizontalSpacer" id="messageContainer"></div>
+
+    <header>
+
+        <h1>Mia<span>Mood</span></h1>
+
+        <nav>
+
+            <div id="navIcons">
+                <span class="icon navIcon" id="latestMoods"><a onclick="getTodayMoods()"></a></span>
+                <span class="icon navIcon" id="allMoods"><a onclick="getAllMoods()"></a></span>
+                <span class="icon navIcon" id="newMood"><a onclick="openNewMoodForm()"></a></span>
+            </div>
+
+            <div id="navHint"></div>
+
+        </nav>
+
+    </header>
+
+    <div id="containerA">
+
+        <aside id="pageTitle">
+
+        </aside>
+
+        <section id="contentA">
+
+            <section id="moods"></section>
+
+        </section>
+
+    </div>
+
+    <div id="containerB">
+
+    </div>
+
+    <script src="./assets/JS/script.js"></script>
+    <script src="./assets/JS/script_moods.js"></script>
+    <script src="./assets/JS/script_form.js"></script>
+    <script src="./assets/JS/script_addUpdate.js"></script>
+    <script src="./assets/JS/script_delete.js"></script>
+
+</body>
+
+</html>

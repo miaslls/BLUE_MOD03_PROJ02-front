@@ -1,0 +1,96 @@
+#moods {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+h3.titleDate {
+  margin: 1rem 0 0.5rem 0;
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.moodContainer {
+  width: 100%;
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 0.5rem;
+}
+
+.moodIcon {
+  width: 1.5rem;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.moodTimestamp {
+  width: calc(100% - 5.5rem);
+  font-size: 0.75rem;
+}
+
+.moodOptions {
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.1rem;
+  opacity: 0.5;
+}
+
+.moodText {
+  width: 100%;
+  padding-left: 2rem;
+  font-family: brother-1816-printed, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 200;
+}
+
+.mood_1 {
+  color: #e25b2d !important;
+}
+
+.mood_2 {
+  color: #cd9f0c !important;
+}
+
+.mood_3 {
+  color: #a296ad !important;
+}
+
+.mood_4 {
+  color: #4483db !important;
+}
+
+.mood_5 {
+  color: #03c599 !important;
+}
+
+.mood_6 {
+  color: #ea3ba7 !important;
+}
+
+.mood_0 {
+  color: #9b6cc4 !important;
+}
+
+@media screen and (min-width: 700px) {
+  .moodOptions {
+    opacity: 0;
+  }
+
+  .visible {
+    opacity: 0.75 !important;
+  }
+
+  .updateDeleteIcon {
+    transition: all 0.25s;
+  }
+
+  .updateDeleteIcon:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+  }
+}
