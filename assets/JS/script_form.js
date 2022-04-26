@@ -81,7 +81,7 @@ function moodFormHTML(mood) {
     moodForm.insertAdjacentHTML(
       'beforeend',
       `
-      <button id="moodFormBtn" onclick="updateMood(${mood.id})" enabled>
+      <button id="moodFormBtn" onclick="updateMood('${mood._id}')" enabled>
         update<strong>Mood</strong>
         <span class="icon" id="btnIcon"></span>
       </button>
